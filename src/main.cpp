@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -8,6 +9,11 @@ typedef struct
     float x;
     float y;
 } coordinate;
+
+float countDistance(coordinate c1, coordinate c2)
+{
+    return sqrt(pow(c2.x - c1.x, 2) + pow(c2.y - c1.y, 2));
+}
 
 int main(void)
 {
