@@ -21,8 +21,8 @@ void divideCoord(coordinate *coord);
 #define HEIGHT 768
 
 const coordinate coord1 = { -.5f, -.5f };
-const coordinate coord2 = { .5f, -.5f };
-const coordinate coord3 = { .0f, .5f };
+const coordinate coord2 = { +.5f, -.5f };
+const coordinate coord3 = { +.0f, +.5f };
 
 int main(void)
 {
@@ -34,11 +34,11 @@ int main(void)
         return -1;
     }
 
-    glfwWindowHint(GLFW_SAMPLES, 4); //4x antialiasing
+    /*glfwWindowHint(GLFW_SAMPLES, 4); //4x antialiasing
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //OpenGL 3.3
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); //MacOS
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //No old OpenGL
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //No old OpenGL*/
 
     //Open a window and create its OpenGL context
     GLFWwindow* window;
