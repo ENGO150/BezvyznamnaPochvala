@@ -1,4 +1,4 @@
-FILES = src/main.cpp
+FILES = src/main.c
 
 all:
-	g++ $(FILES) -lglfw -lGL -o out/main
+	$(CC) $(FILES) -lGL -lglfw -o out/main
