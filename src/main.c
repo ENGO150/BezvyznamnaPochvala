@@ -20,9 +20,11 @@ void divideCoord(coordinate *coord);
 #define WIDTH 1024
 #define HEIGHT 768
 
-const coordinate coord1 = { -.5f, -.5f };
-const coordinate coord2 = { +.5f, -.5f };
-const coordinate coord3 = { +.0f, +.5f };
+//VARIABLES
+coordinate coord1 = { -.5f, -.5f };
+coordinate coord2 = { +.5f, -.5f };
+coordinate coord3 = { +.0f, +.5f };
+coordinate coordBuffer;
 
 int main(void)
 {
