@@ -44,7 +44,7 @@ int main(void)
 
     coordinate coord1 = { -.5f, -.5f };
     coordinate coord2 = { .5f, -.5f };
-    coordinate coord3 = { -.0f, .5f };
+    coordinate coord3 = { .0f, .5f };
 
     while (!glfwWindowShouldClose(window))
     {
