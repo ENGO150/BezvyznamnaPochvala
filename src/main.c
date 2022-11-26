@@ -78,6 +78,14 @@ int main(void)
         glVertex2f(coord2.x, coord2.y);
         glVertex2f(coord3.x, coord3.y);
 
+        coordNew[0] = divideCoord(coord1);
+        coordNew[1] = divideCoord(coord3);
+        coordBuffer = countThirdVertex(coordNew[0], coordNew[1]);
+
+        glVertex2f(coordNew[0].x, coordNew[0].y);
+        glVertex2f(coordNew[1].x, coordNew[1].y);
+        glVertex2f(coordBuffer.x, coordBuffer.y);
+
         glEnd();
 
         // Swap buffers
