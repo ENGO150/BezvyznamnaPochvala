@@ -14,7 +14,8 @@ typedef struct
 
 //FUNCTIONS
 float countDistance(coordinate c1, coordinate c2);
-void divideCoord(coordinate *coord);
+coordinate divideCoord(coordinate coord);
+coordinate countThirdVertex(coordinate coord1, coordinate coord2);
 
 //CONSTS
 #define WIDTH 1024
@@ -92,7 +93,7 @@ float countDistance(coordinate c1, coordinate c2)
     return sqrt(pow(c2.x - c1.x, 2) + pow(c2.y - c1.y, 2));
 }
 
-void divideCoord(coordinate *coord)
+coordinate divideCoord(coordinate coord)
 {
     coord -> x /= 2;
     coord -> y /= 2;
