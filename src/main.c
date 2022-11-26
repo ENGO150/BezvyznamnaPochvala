@@ -25,6 +25,7 @@ coordinate countThirdVertex(coordinate coord1, coordinate coord2);
 coordinate coord1 = { -.5f, -.5f };
 coordinate coord2 = { +.5f, -.5f };
 coordinate coord3 = { +.0f, +.5f };
+coordinate coordNew[2];
 coordinate coordBuffer;
 
 int main(void)
