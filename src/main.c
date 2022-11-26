@@ -64,6 +64,8 @@ int main(void)
 
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
+    glColor3f(1.f, 0.f, 1.f); //COLOR
+
     while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0)
     {
         glClear(GL_COLOR_BUFFER_BIT);
