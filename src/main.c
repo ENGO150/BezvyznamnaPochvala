@@ -75,7 +75,7 @@ int main(void)
         glBegin(GL_TRIANGLES);
 
         glVertex2f(coord1.x, coord1.y);
-        glVertex2f(coord2.x, coord2.y); //TODO: This drawing shit doesn't work
+        glVertex2f(coord2.x, coord2.y);
         glVertex2f(coord3.x, coord3.y);
 
         glEnd();
