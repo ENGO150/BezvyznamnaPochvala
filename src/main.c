@@ -19,7 +19,7 @@ coordinate countThirdVertex(coordinate coord1, coordinate coord2);
 
 //CONSTS
 #define WIDTH 1024
-#define HEIGHT 768
+#define HEIGHT 768 //TODO: Fix res ratio
 
 //VARIABLES
 coordinate coord1 = { -.5f, -.5f };
