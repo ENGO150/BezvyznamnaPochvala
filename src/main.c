@@ -115,7 +115,7 @@ coordinate countThirdVertex(coordinate coord1, coordinate coord2)
 {
     return (coordinate)
     {
-        (float) (coord1.x + coord2.x /**/-/**/ (sqrt(3) * coord2.y - coord1.y)) / 2,
-        (float) (coord1.y + coord2.y /**/+/**/ (sqrt(3) * coord2.x - coord1.x)) / 2
+        (float) (coord1.x + coord2.x /**/-/**/ sqrt(3) * (coord2.y - coord1.y)) / 2,
+        (float) (coord1.y + coord2.y /**/+/**/ sqrt(3) * (coord2.x - coord1.x)) / 2
     };
 }
